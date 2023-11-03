@@ -1,0 +1,11 @@
+app fullStack {
+  wasp: {
+    version: "^0.11.7"
+  },
+  title: "fullStack"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import Main from "@client/MainPage.jsx"
+}
